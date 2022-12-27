@@ -7,7 +7,7 @@ else
     python3 -m venv env
 fi
 
-# env/Scripts/activate
+env/Scripts/activate
     # source env/bin/activate
 
 
@@ -21,4 +21,4 @@ else
     touch logs/error.log logs/access.log
 fi
 
-sudo chmod -R 777 logs
+sudo chmod -R * logs
