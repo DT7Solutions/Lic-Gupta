@@ -6,15 +6,13 @@ pipeline{
        
       steps  {
             sh '''
-            chmod +x envsetup.sh
-            ./scripts/envsetup.sh
+            sudo chmod +x envsetup.sh && sudo ./envsetup.sh
             '''}
         }
         stage('Setup Gunicorn Setup'){
             steps {
                 sh '''
-                chmod +x gunicorn.sh
-                ./scripts/gunicorn.sh
+                sudo chmod +x gunicorn.sh && sudo ./gunicorn.sh
                 '''
             }
         }
@@ -22,7 +20,7 @@ pipeline{
             steps {
                 sh '''
                 chmod +x nginx.sh
-                ./scripts/nginx.sh
+                ./nginx.sh
                 '''
             }
         }
