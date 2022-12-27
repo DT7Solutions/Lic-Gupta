@@ -7,7 +7,7 @@ else
     python3 -m venv env
 fi
 
-  env\Scripts\activate
+  env/Scripts/activate
 # source env/bin/activate
 
 
