@@ -4,8 +4,10 @@ pipeline{
     
         stage('Setup Python Virtual ENV'){
         steps  {
+                '''
                 python3 -m venv env
                 source env/bin/activate
+                '''
                 // sh '''
                 // sudo chmod +x envsetup.sh
                 // sudo ./envsetup.sh
