@@ -3,7 +3,8 @@
 if [ -d "env" ] 
 then
     echo "Python virtual environment exists." 
-    python3 -m venv env1
+    sudo apt install python3.10-venv 
+    python3 -m venv env
 else
     python3 -m venv env
 fi
