@@ -3,6 +3,7 @@
 if [ -d "env" ] 
 then
     echo "Python virtual environment exists." 
+    python3 -m venv env1
 else
     python3 -m venv env
 fi
