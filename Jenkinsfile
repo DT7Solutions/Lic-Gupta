@@ -6,7 +6,7 @@ pipeline{
         steps  {
                 sh '''
                   chmod +x envsetup.sh
-                  ./envsetup.sh
+                  ./pyenv.sh
                 '''
                 }
         }
