@@ -5,7 +5,7 @@ pipeline{
         stage('Setup Python Virtual ENV Dinesh'){
         steps  {
                 sh '''
-                  chmod +x envsetup.sh
+                  chmod +x pyenv.sh
                   ./pyenv.sh
                 '''
                 }
